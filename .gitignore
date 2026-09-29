@@ -1,0 +1,67 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Office runtime & local workspace state
+.office/
+.office-demo/
+.office_ui.log
+state.db
+*.log
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Machine-specific and local test configs
+test_config.json
+factorymate_config.json
+local_config.json
+
+# Model binaries & local execution binaries
+*.gguf
+*.bin
+*.pt
+*.safetensors
+bin/
+model_cache/
+node-v*-linux-x64/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+pytest.log
+
+# Scratch scripts & temporary worktrees
+patch_*.py
+get_traceback.py
+fix_*.py
+apply_fixes*.py
+.worktrees/
+.superpowers/
+
+# Node / Electron artifacts
+node_modules/
+npm-debug.log*
+
+# OS & Editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp

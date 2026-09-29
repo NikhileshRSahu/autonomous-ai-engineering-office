@@ -1,0 +1,309 @@
+{
+  "backend": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "backend",
+      "server",
+      "api",
+      "src"
+    ]
+  },
+  "benchmarking": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "python"
+    ],
+    "write": [
+      "benchmarks",
+      "analysis"
+    ]
+  },
+  "cloud": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "git",
+      "research"
+    ],
+    "write": [
+      "infra",
+      "deploy",
+      "cloud",
+      ".github"
+    ]
+  },
+  "control": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell"
+    ],
+    "write": [
+      "controllers",
+      "control",
+      "config"
+    ]
+  },
+  "database": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell"
+    ],
+    "write": [
+      "database",
+      "db",
+      "migrations"
+    ]
+  },
+  "devops": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      ".github",
+      "deploy",
+      "infra",
+      "docker"
+    ]
+  },
+  "documentation": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "research"
+    ],
+    "write": [
+      "docs"
+    ]
+  },
+  "electronics": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "research",
+      "shell"
+    ],
+    "write": [
+      "electronics",
+      "hardware",
+      "firmware",
+      "docs"
+    ]
+  },
+  "frontend": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "frontend",
+      "web",
+      "ui",
+      "src"
+    ]
+  },
+  "machine_learning": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "python"
+    ],
+    "write": [
+      "models",
+      "training",
+      "ml",
+      "src"
+    ]
+  },
+  "mathematics": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "python",
+      "research"
+    ],
+    "write": [
+      "analysis",
+      "docs"
+    ]
+  },
+  "mechanical": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "research"
+    ],
+    "write": [
+      "cad",
+      "mechanical",
+      "design",
+      "docs"
+    ]
+  },
+  "networking": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "research"
+    ],
+    "write": [
+      "network",
+      "config",
+      "src"
+    ]
+  },
+  "optimization": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "python"
+    ],
+    "write": [
+      "src",
+      "analysis",
+      "benchmarks"
+    ]
+  },
+  "research": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "research"
+    ],
+    "write": [
+      "research",
+      "analysis",
+      "docs"
+    ]
+  },
+  "robotics": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "ros2_ws",
+      "robot",
+      "gazebo",
+      "src"
+    ]
+  },
+  "security": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "security",
+      "config",
+      "src"
+    ]
+  },
+  "simulation": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "shell",
+      "research"
+    ],
+    "write": [
+      "simulation",
+      "sim",
+      "config"
+    ]
+  },
+  "software_engineering": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "src",
+      "lib",
+      "app"
+    ]
+  },
+  "statistics": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "python"
+    ],
+    "write": [
+      "analysis"
+    ]
+  },
+  "systems_engineering": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell",
+      "git"
+    ],
+    "write": [
+      "src",
+      "system",
+      "systems",
+      "config",
+      "infra"
+    ]
+  },
+  "testing": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "filesystem.write",
+      "shell"
+    ],
+    "write": [
+      "tests"
+    ]
+  },
+  "ux": {
+    "tools": [
+      "filesystem.read",
+      "filesystem.search",
+      "research"
+    ],
+    "write": [
+      "ui",
+      "frontend",
+      "docs",
+      "design"
+    ]
+  }
+}

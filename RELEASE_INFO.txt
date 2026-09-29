@@ -1,0 +1,10 @@
+Autonomous AI Engineering Office — Open-Source Launch Release
+Base source commit: ab2153b68f0574858f3c2af773a1688c450bae42
+Tag: v0.1.0
+Built wheel: autonomous_ai_engineering_office-0.1.0-py3-none-any.whl
+Wheel SHA-256: ae7ceb8749c66f4e60d7197309936fa5f086273a15b9a907c251230af22e29bc
+Source Archive (tar.gz) SHA-256: 81104aa62c9d095c4389625deb505daa0d0be8e11869782094f73561de2f1cf7
+Source Archive (zip) SHA-256: dfdde2703a0114e065877ad2c5e8a4ac3a00ed35ab99408418142602d29fc456
+Release date: 2026-09-28
+Test matrix: 331/331 passed (100% green)
+Repository: https://github.com/NikhileshRSahu/autonomous-ai-engineering-office

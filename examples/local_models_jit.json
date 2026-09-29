@@ -1,0 +1,70 @@
+{
+  "model_profiles": {
+    "qwen_provider": {
+      "endpoint": "http://127.0.0.1:8080/v1",
+      "model": "qwen-30b",
+      "timeout": 900,
+      "temperature": 0.1
+    },
+    "nemotron_provider": {
+      "endpoint": "http://127.0.0.1:8081/v1",
+      "model": "nemotron-30b",
+      "timeout": 900,
+      "temperature": 0.1
+    }
+  },
+  "routing": {
+    "LOW": "qwen_provider",
+    "MEDIUM": "qwen_provider",
+    "HIGH": "nemotron_provider",
+    "ESCALATION": "nemotron_provider"
+  },
+  "local_models": {
+    "qwen": {
+      "endpoint": "http://127.0.0.1:8080/v1",
+      "expected_model": "qwen-30b",
+      "start_command": [
+        "llama-server",
+        "-m",
+        "/media/radhe/BA4A-871C/engineering-office-models/qwen/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8080",
+        "--ctx-size",
+        "16384"
+      ],
+      "startup_timeout": 600,
+      "poll_interval": 2,
+      "shutdown_timeout": 20
+    },
+    "nemotron": {
+      "endpoint": "http://127.0.0.1:8081/v1",
+      "expected_model": "nemotron-30b",
+      "start_command": [
+        "llama-server",
+        "-m",
+        "/media/radhe/BA4A-871C/engineering-office-models/nemotron/NVIDIA-Nemotron-3-Nano-30B-A3B-Q4_K_M.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8081",
+        "--ctx-size",
+        "16384"
+      ],
+      "startup_timeout": 600,
+      "poll_interval": 2,
+      "shutdown_timeout": 20
+    }
+  },
+  "model_bindings": {
+    "LOW": "qwen",
+    "MEDIUM": "qwen",
+    "HIGH": "nemotron",
+    "ESCALATION": "nemotron"
+  },
+  "local_runtime_dir": ".office/runtime/models",
+  "max_feedback_cycles": 4,
+  "max_task_iterations": 6,
+  "parallelism": 2
+}

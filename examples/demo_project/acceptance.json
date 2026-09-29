@@ -1,0 +1,1 @@
+{"gates":[{"name":"pytest","command":"python -m pytest -q","expected_exit":0}],"required_evidence":[]}

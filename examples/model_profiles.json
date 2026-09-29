@@ -1,0 +1,16 @@
+{
+  "model_profiles": {
+    "fast-local": {"endpoint": "http://127.0.0.1:8080/v1", "model": "local-fast", "temperature": 0.1},
+    "deep-local": {"endpoint": "http://127.0.0.1:8081/v1", "model": "local-deep", "temperature": 0.1},
+    "escalation": {"endpoint": "https://provider.example/v1", "model": "frontier", "api_key_env": "OFFICE_ESCALATION_API_KEY", "temperature": 0.1}
+  },
+  "routing": {
+    "LOW": "fast-local",
+    "MEDIUM": "fast-local",
+    "HIGH": "deep-local",
+    "ESCALATION": "escalation"
+  },
+  "max_feedback_cycles": 4,
+  "max_task_iterations": 6,
+  "parallelism": 2
+}

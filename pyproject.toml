@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-ai-engineering-office"
+version = "0.1.0"
+description = "Domain-independent autonomous AI engineering office with dynamic staffing, feedback, evidence, and independent verification."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Nikhilesh R Sahu"}, {name = "Autonomous AI Engineering Office Contributors"}]
+dependencies = []
+
+[project.scripts]
+office = "engineering_office.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.setuptools.package-data]
+engineering_office = ["data/*.json", "ui/*", "ui/vendor/*"]

@@ -1,0 +1,10 @@
+{
+  "model_profiles": {
+    "fast-local": {"endpoint": "http://127.0.0.1:8080/v1", "model": "local-coder", "temperature": 0.1},
+    "deep-local": {"endpoint": "http://127.0.0.1:8081/v1", "model": "local-reasoner", "temperature": 0.1}
+  },
+  "routing": {"LOW": "fast-local", "MEDIUM": "fast-local", "HIGH": "deep-local", "ESCALATION": "deep-local"},
+  "max_feedback_cycles": 4,
+  "max_task_iterations": 6,
+  "parallelism": 2
+}

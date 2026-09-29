@@ -1,0 +1,13 @@
+{
+  "name": "engineering-office-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional desktop shell for Autonomous AI Engineering Office",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {"case_id": "SW-LOGIC-001", "category": "software", "objective": "repair a deterministic logic defect", "expected_root_cause": "incorrect implementation logic"},
+    {"case_id": "DB-LOCK-001", "category": "database", "objective": "diagnose concurrent write blocking", "expected_root_cause": "lock or transaction ordering"},
+    {"case_id": "FE-STATE-001", "category": "frontend", "objective": "repair stale UI state", "expected_root_cause": "state synchronization"},
+    {"case_id": "SEC-AUTH-001", "category": "security", "objective": "repair authorization boundary", "expected_root_cause": "missing authorization check"},
+    {"case_id": "ML-DATA-001", "category": "machine_learning", "objective": "repair training data pipeline", "expected_root_cause": "data preprocessing mismatch"},
+    {"case_id": "PERF-001", "category": "performance", "objective": "identify regression hotspot", "expected_root_cause": "measured bottleneck"},
+    {"case_id": "ROB-TF-001", "category": "robotics", "objective": "repair transform configuration", "expected_root_cause": "incorrect frame transform"},
+    {"case_id": "ELEC-001", "category": "electronics", "objective": "diagnose interface mismatch", "expected_root_cause": "electrical or protocol mismatch"},
+    {"case_id": "MECH-001", "category": "mechanical", "objective": "identify geometry/constraint inconsistency", "expected_root_cause": "mechanical constraint mismatch"},
+    {"case_id": "RES-001", "category": "research", "objective": "reproduce an experimental result", "expected_root_cause": "method/configuration discrepancy"}
+  ]
+}

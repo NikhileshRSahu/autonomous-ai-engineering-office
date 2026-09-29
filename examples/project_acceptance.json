@@ -1,0 +1,6 @@
+{
+  "gates": [
+    {"name": "unit-tests", "command": "python -m pytest -q", "expected_exit": 0, "timeout": 300}
+  ],
+  "required_evidence": []
+}
